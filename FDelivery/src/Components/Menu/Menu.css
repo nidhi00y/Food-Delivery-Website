@@ -1,0 +1,42 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.menu-text{
+    max-width: 60%;
+}
+
+.menu-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 20px 0;
+    text-align: center;
+    overflow-x: scroll;
+}
+
+.menu-list::-webkit-scrollbar{
+    display: none;
+}
+
+.explore img{
+    width: 7.5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+
+.explore p{
+    cursor: pointer;
+}
+
+.explore .active{
+    border: 2px solid rgb(190, 72, 51);
+    padding: 2px;
+}

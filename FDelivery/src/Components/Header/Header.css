@@ -1,0 +1,46 @@
+.header{
+    height: 34vw;
+    width: 30px auto;
+    background: url('/bg.jpg');
+    background-color: rgba(0,0,0,0.5);
+    background-size: cover;
+    position: relative;
+}
+
+.header-compo{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+
+.header-compo h2{
+    font-size: 5vw;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.header-compo p{
+    font-weight: 600;
+}
+
+.header-compo button{
+    padding: 15px;
+    border-radius: 50px;
+    border-style: none;
+    font-weight: 500;
+    color: black;
+
+}
+
+.header-compo button:hover{
+    background-color: rgb(196, 77, 56) ;
+    transition: 0.3s;
+    color: white;
+    cursor: pointer;
+}
