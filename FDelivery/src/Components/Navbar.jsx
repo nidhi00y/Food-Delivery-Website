@@ -4,7 +4,7 @@ import searchIcon from '../assets/search_icon.png';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({setShowLogin}) => {
     const [menu, setMenu] = useState("home");
 
     return (
@@ -22,7 +22,7 @@ const Navbar = () => {
                     <img src={basketIcon} alt="Basket" className='basket' />
                     <div className="dot"></div>
                 </div>
-                <button>Sign In</button>
+                <button onClick={()=>setShowLogin(true)}>Sign In</button>
             </div>
         </div>
     );
